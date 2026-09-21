@@ -1,3 +1,26 @@
+tl;dr:
+
+```shell
+# Generates `build/onlyoffice-x2t-<VERSION>.tgz`. `release_version` must be a valid
+# npm version.
+./build.sh <release_version>
+```
+
+The generated `build/onlyoffice-x2t-<VERSION>.tgz` is an npm package to be used
+as project dependency:
+
+```json
+{
+  "dependencies": {
+    "onlyoffice-editor": "https://github.com/Scille/onlyoffice-x2t-wasm/releases/download/v<VERSION>/onlyoffice-x2t-<VERSION>.tgz"
+  }
+}
+```
+
+---
+Original README
+---
+
 # Build OnlyOffice x2t for WebAssembly
 
 ## Modifications by CryptPad
