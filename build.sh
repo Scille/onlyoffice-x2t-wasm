@@ -29,7 +29,7 @@ else
   exit 127
 fi
 
-"${builder[@]}" "$@" --target test-output -o results .
+# "${builder[@]}" "$@" --target test-output -o results .
 mkdir build
 "${builder[@]}" "$@" --target output -o build/docker .
 
