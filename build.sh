@@ -31,7 +31,7 @@ fi
 
 "${builder[@]}" "$@" --target test-output -o results .
 mkdir build
-"${builder[@]}" "$@" --build-arg release_version="$release_version" --target output -o build/docker .
+"${builder[@]}" "$@" --target output -o build/docker .
 
 # 2. Generate the final npm package
 
